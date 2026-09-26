@@ -1,12 +1,14 @@
 import { expect, test } from "@playwright/test";
+import { HomePage } from "../../pages/HomePage";
 
 test.describe("Playwright website navigation", () => {
   test("should load the Playwright home page successfully", async ({
     page,
   }) => {
-    await page.goto("https://playwright.dev/");
+    const homePage = new HomePage(page);
+    await homePage.goto();
 
     await expect(page).toHaveTitle(/Playwright/);
-    await expect(page.getByRole("link", { name: "Get started" })).toBeVisible();
+    await expect(homePage.getStartedLink).toBeVisible();
   });
 });
