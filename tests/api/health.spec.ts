@@ -5,7 +5,7 @@ import { environment } from "../../config/environments";
 interface PostResponse {
   userId: number;
   id: number;
-  tittle: string;
+  title: string;
   body: string;
 }
 
