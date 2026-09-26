@@ -3,7 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "description": "Professional Playwright template for end-to-end testing and automated test reporting.",
-  "scripts": {},
+  "scripts": {
+    "test": "playwright test",
+    "test:e2e": "playwright test tests/e2e",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
   "keywords": [
     "playwright",
     "testing",
@@ -12,5 +18,10 @@
     "automation"
   ],
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.6.3",
+    "typescript": "^7.0.2"
+  }
 }
