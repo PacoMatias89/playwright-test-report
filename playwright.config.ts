@@ -4,6 +4,17 @@ export default defineConfig({
   testDir: "./tests",
   outputDir: "test-results",
 
+  reporter: [
+    ["list"],
+    [
+      "html",
+      {
+        outputFolder: "reports/html",
+        open: "never",
+      },
+    ],
+  ],
+
   use: {
     screenshot: "only-on-failure",
     trace: "retain-on-failure",
