@@ -5,6 +5,8 @@ export default defineConfig({
   testDir: "./tests",
   outputDir: "test-results",
 
+  workers: process.env.CI ? 1 : undefined,
+
   reporter: [
     ["list"],
     [
