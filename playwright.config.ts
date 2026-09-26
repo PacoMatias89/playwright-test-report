@@ -13,6 +13,12 @@ export default defineConfig({
         open: "never",
       },
     ],
+    [
+      "junit",
+      {
+        outputFile: "reports/junit/results.xml",
+      },
+    ],
   ],
 
   use: {
