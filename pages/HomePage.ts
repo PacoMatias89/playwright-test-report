@@ -2,7 +2,6 @@ import type { Locator, Page } from "@playwright/test";
 
 export class HomePage {
   private readonly page: Page;
-  private readonly url = "https://playwright.dev/";
 
   readonly getStartedLink: Locator;
 
@@ -12,6 +11,6 @@ export class HomePage {
   }
 
   async goto(): Promise<void> {
-    await this.page.goto(this.url);
+    await this.page.goto("/");
   }
 }

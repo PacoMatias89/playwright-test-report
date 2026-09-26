@@ -1,4 +1,5 @@
 import { defineConfig, devices } from "@playwright/test";
+import { environment } from "./config/environments";
 
 export default defineConfig({
   testDir: "./tests",
@@ -22,6 +23,7 @@ export default defineConfig({
   ],
 
   use: {
+    baseURL: environment.baseUrl,
     screenshot: "only-on-failure",
     trace: "retain-on-failure",
     video: "retain-on-failure",
