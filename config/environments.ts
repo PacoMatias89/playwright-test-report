@@ -12,4 +12,5 @@ function getRequiredEnvironmentVariable(name: string): string {
 
 export const environment = {
   baseUrl: getRequiredEnvironmentVariable("BASE_URL"),
+  apiBaseUrl: getRequiredEnvironmentVariable("API_BASE_URL"),
 };
