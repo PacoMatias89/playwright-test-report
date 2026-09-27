@@ -1,6 +1,6 @@
 {
   "name": "playwright-test-report",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "description": "Professional Playwright template for end-to-end testing and automated test reporting.",
   "scripts": {

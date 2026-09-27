@@ -450,7 +450,7 @@ Issues and pull requests can be used to propose improvements, fixes, or addition
 
 ## License
 
-A license will be included before the first stable public release.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
 
