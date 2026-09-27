@@ -1,5 +1,11 @@
 # Playwright Test Report
 
+[![Playwright Tests](https://github.com/PacoMatias89/playwright-test-report/actions/workflows/playwright.yml/badge.svg)](https://github.com/PacoMatias89/playwright-test-report/actions/workflows/playwright.yml)
+[![Release](https://img.shields.io/github/v/release/PacoMatias89/playwright-test-report)](https://github.com/PacoMatias89/playwright-test-report/releases)
+[![License](https://img.shields.io/github/license/PacoMatias89/playwright-test-report)](LICENSE)
+[![Playwright](https://img.shields.io/badge/Playwright-1.63-2EAD33?logo=playwright&logoColor=white)](https://playwright.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-7.x-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+
 A reusable Playwright + TypeScript starter project for end-to-end testing, API testing, automated reporting, failure artifacts, and CI execution.
 
 The goal of this repository is to provide a clean and practical foundation that QA Automation Engineers and developers can clone and adapt to their own projects without unnecessary complexity.
