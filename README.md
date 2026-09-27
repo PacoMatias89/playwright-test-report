@@ -8,7 +8,7 @@
 
 A reusable Playwright + TypeScript starter project for end-to-end testing, API testing, automated reporting, failure artifacts, and CI execution.
 
-The goal of this repository is to provide a clean and practical foundation that QA Automation Engineers and developers can clone and adapt to their own projects without unnecessary complexity.
+Built for QA Automation Engineers and developers who want a clean, practical foundation they can clone and adapt without unnecessary framework complexity.
 
 ## Features
 
