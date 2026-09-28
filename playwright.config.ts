@@ -34,8 +34,17 @@ export default defineConfig({
   projects: [
     {
       name: "chromium",
+      testMatch: "**/e2e/**/*.spec.ts",
       use: {
         ...devices["Desktop Chrome"],
+        baseURL: environment.baseUrl,
+      },
+    },
+    {
+      name: "api",
+      testMatch: "**/api/**/*.spec.ts",
+      use: {
+        baseURL: environment.apiBaseUrl,
       },
     },
   ],

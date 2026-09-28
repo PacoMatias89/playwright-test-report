@@ -1,7 +1,5 @@
 import { expect, test } from "@playwright/test";
 
-import { environment } from "../../config/environments";
-
 interface PostResponse {
   userId: number;
   id: number;
@@ -14,7 +12,7 @@ test.describe("API response checks", { tag: "@api" }, () => {
     "should return a successful API response",
     { tag: ["@smoke", "@regression"] },
     async ({ request }) => {
-      const response = await request.get(`${environment.apiBaseUrl}/posts/1`);
+      const response = await request.get("/posts/1");
 
       expect(response.status()).toBe(200);
       expect(response.ok()).toBeTruthy();
