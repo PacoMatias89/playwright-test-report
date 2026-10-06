@@ -16,12 +16,12 @@
       "node"
     ]
   },
-  "include": [
-    "playwright.config.ts",
-    "tests/**/*.ts",
-    "pages/**/*.ts",
-    "fixtures/**/*.ts",
-    "utils/**/*.ts",
-    "config/**/*.ts"
-  ]
+"include": [
+  "tests/**/*.ts",
+  "pages/**/*.ts",
+  "fixtures/**/*.ts",
+  "utils/**/*.ts",
+  "config/**/*.ts",
+  "test-data/*/*.ts"
+]
 }
