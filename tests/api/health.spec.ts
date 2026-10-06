@@ -1,4 +1,5 @@
 import { expect, test } from "@playwright/test";
+import { postTestData } from "../../test-data/api/posts";
 
 interface PostResponse {
   userId: number;
@@ -12,7 +13,8 @@ test.describe("API response checks", { tag: "@api" }, () => {
     "should return a successful API response",
     { tag: ["@smoke", "@regression"] },
     async ({ request }) => {
-      const response = await request.get("/posts/1");
+      const { existingPost } = postTestData;
+      const response = await request.get(`/posts/${existingPost.id}`);
 
       expect(response.status()).toBe(200);
       expect(response.ok()).toBeTruthy();
