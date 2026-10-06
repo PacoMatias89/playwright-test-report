@@ -5,11 +5,11 @@ import { config } from "dotenv";
 
 const selectedEnvironment = process.env.TEST_ENV?.trim();
 
-const environmetFile = selectedEnvironment
+const environmentFile = selectedEnvironment
   ? `.env.${selectedEnvironment}`
   : ".env";
 
-const environmentPath = resolve(process.cwd(), environmetFile);
+const environmentPath = resolve(process.cwd(), environmentFile);
 
 if (existsSync(environmentPath)) {
   config({
@@ -17,13 +17,14 @@ if (existsSync(environmentPath)) {
     quiet: true,
   });
 }
+
 function getRequiredEnvironmentVariable(name: string): string {
   const value = process.env[name]?.trim();
 
   if (!value) {
     throw new Error(
-      `Mising required environment variable: ${name}.` +
-        `Provide it through ${environmetFile} or the execution environment`,
+      `Missing required environment variable: ${name}. ` +
+        `Provide it through ${environmentFile} or the execution environment.`,
     );
   }
 
